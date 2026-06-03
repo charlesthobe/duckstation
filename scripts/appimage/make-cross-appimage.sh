@@ -28,7 +28,8 @@ ARCH=$1
 BUILDDIR=$2
 CHROOTDIR=$3
 
-STRIP=llvm-strip
+LLVM_VER=$(cat "$SCRIPTDIR/LLVM_VER")
+STRIP=llvm-strip-${LLVM_VER}
 
 if [ "$ARCH" == "arm64" ]; then
 	DEBARCH="arm64"
@@ -50,6 +51,8 @@ declare -a SYSLIBS=(
 	"libbrotlicommon.so.1"
 	"libbrotlidec.so.1"
 	"libbsd.so.0"
+	"libc++.so.1"
+	"libc++abi.so.1"
 	"libcom_err.so.2"
 	"libcrypto.so.3"
 	"libcurl.so.4"
