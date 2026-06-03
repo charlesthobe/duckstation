@@ -28,7 +28,8 @@ ARCH=$1
 BUILDDIR=$2
 CHROOTDIR=$3
 
-STRIP=llvm-strip
+LLVM_VER=$(cat "$SCRIPTDIR/LLVM_VER")
+STRIP=llvm-strip-${LLVM_VER}
 
 if [ "$ARCH" == "arm64" ]; then
 	DEBARCH="arm64"
