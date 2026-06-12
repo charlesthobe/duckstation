@@ -17,7 +17,7 @@ jobs:
 
     runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/duckstation/cross-build-${{ matrix.arch }}:latest
+      image: ghcr.io/charlesthobe/cross-build-${{ matrix.arch }}:latest
 
     timeout-minutes: 240
     steps:
@@ -29,8 +29,8 @@ jobs:
       run: |
         DEPS_VERSION=$(cat dep/PREBUILT-VERSION)
         cd dep/prebuilt
-        curl --fail --retry 5 --retry-all-errors -LO "https://github.com/duckstation/dependencies/releases/download/$DEPS_VERSION/deps-linux-x64.tar.xz"
-        curl --fail --retry 5 --retry-all-errors -LO "https://github.com/duckstation/dependencies/releases/download/$DEPS_VERSION/deps-linux-cross-${{matrix.arch}}.tar.xz"
+        curl --fail --retry 5 --retry-all-errors -LO "https://github.com/charlesthobe/duckstation_dependencies/releases/download/$DEPS_VERSION/deps-linux-x64.tar.xz"
+        curl --fail --retry 5 --retry-all-errors -LO "https://github.com/charlesthobe/duckstation_dependencies/releases/download/$DEPS_VERSION/deps-linux-cross-${{matrix.arch}}.tar.xz"
         sha256sum --check --ignore-missing ../PREBUILT-SHA256SUMS
         tar -xf "deps-linux-x64.tar.xz"
         tar -xf "deps-linux-cross-${{matrix.arch}}.tar.xz"

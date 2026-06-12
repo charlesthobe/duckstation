@@ -1,6 +1,3 @@
-9eb899e592b61a3ce640d6433e47c7850079276483bf937b7c5b7c85dc949acf *deps-linux-cross-arm64.tar.xz
-c2bf7e580fb0e12371c06b09551ccbe3fec5f264c9aa3dd7a404bec55c87b356 *deps-linux-cross-armhf.tar.xz
-5cb2f7cf5cd8fd2fb89ac2be8b9be5299447872b0b3ad755160ad1cd1f3db397 *deps-linux-x64.tar.xz
-2c0c347a8f62f862f8c578abfc5c35c0c83ca1ea07bfce01b2e1ccec7a03972a *deps-macos-universal.tar.xz
-d67195f97c70405fc083793e0070539b8394e2b4364c17aa1fc7a436cb112023 *deps-windows-arm64.7z
-8e4ad81a0f364e478e699f9c75a6a53fe9cc303377f18414030f18e0a2a4d789 *deps-windows-x64.7z
+df0639fbf688631786798470671a6571bff43ecfe20185a57e195f637b806535 *deps-linux-cross-arm64.tar.xz
+4ea7eedc548a21a3c613c41ab4d1ed3abae3ce2640c221b24b27ca066d856574 *deps-linux-cross-armhf.tar.xz
+2316444f7c959a0acac87518d38b6c85638f389f93a47ba5cef0972dac518fdd *deps-linux-x64.tar.xz
